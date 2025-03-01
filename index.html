@@ -7,9 +7,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet" type="text/css" />
 </head>
-<body class="flex">
-    <section class="bg-base-200 p-6"  >
-    <div class="max-w-6xl mx-auto">
+<body>
+
+<section class="bg-base-200 p-6">
+
+    
+    <section class="max-w-6xl mx-auto    ">
         <nav class="navbar bg-base-100 rounded-lg shadow-md p-4 flex justify-between">
 
 
@@ -19,25 +22,37 @@
             </div>
 
             <div class="flex items-center gap-4">
-                <span class="badge badge-primary text-lg">23</span>
+
+                <div class="flex" >
+                    <img src="assets/checkbox.png" alt="no">
+                    <span class="font-bold text-2xl" id="checkBox">&nbsp;&nbsp;23</span>
+                </div>
+                
 
                 <img src="assets/theme-btn.png" alt="no">
 
             </div>
         </nav>
+    </section>
+
+<section1 class="flex bg-base-200 p-6 max-w-6xl mx-auto gap-4">
+
+
+    <section2 class="bg-base-200  "  >
+
         
         <div class="mt-6 bg-white p-6 rounded-lg shadow-lg">
             <div class="flex justify-between">
 
              <div class=" card bg-base-100 shadow-md p-2 border flex ">
                 <img src="assets/checkbox.png" alt="no" class="w-1/6 h-1/2">
-                <span class="text-lg font-semibold"> Task Assigned <span class="badge badge-primary">05</span></span>
+                <div class="text-lg font-semibold" > Task Assigned <span class="badge badge-primary" id="taskAssigned">05</span></div>
              </div>
 
 
              <div class="bg-blue-700  card bg-base-100 shadow-md p-2 border">
                 <img src="assets/board.png" alt="no" class="w-1/6 h-1/2">
-                <span class="text-lg font-semibold text-white"> Discover Something New Today!</span>
+                <div class="text-lg font-semibold text-white"> Discover Something New Today!</div>
 
              </div>
 
@@ -55,60 +70,66 @@
                     <h2 class="text-lg font-bold">Fix Mobile Button Issue</h2>
                     <p class="text-sm">Debug using Chrome, check for overlap...</p>
                     <span class="text-xs">Deadline: 21 March 2025</span>
-                    <button class="btn bg-blue-600">Completed</button>
+                    <button class="btn bg-blue-600" id="button1" >Completed</button>
                 </div>
                 <div class="card bg-base-100 shadow-md p-4 border border-gray-200">
                     <h2 class="text-lg font-bold">Add Dark Mode</h2>
-                    <p class="text-sm">Store user preference in local storage...</p>
+                    <p class="text-sm">Store user preference in local storage...</p><br>
                     <span class="text-xs">Deadline: 21 March 2025</span>
-                    <button class="btn bg-blue-600">Completed</button>
+                    <button class="btn bg-blue-600 " id="button2">Completed</button>
                 </div>
                 <div class="card bg-base-100 shadow-md p-4 border border-gray-200">
                     <h2 class="text-lg font-bold">Optimize Home Page</h2>
-                    <p class="text-sm">Debug using Chrome DevTools...</p>
-                    <span class="text-xs">Deadline: 21 March 2025</span>
-                    <button class="btn bg-blue-600">Completed</button>
+                    <p class="text-sm">Debug using Chrome DevTools...</p><br>
+                    <div class="text-xs">Deadline: 21 March 2025</div>
+                    <button class="btn bg-blue-600" id="button3">Completed</button>
                 </div>
             </div>
             
             <div class="mt-4 grid grid-cols-3 gap-4">
                 <div class="card bg-base-100 shadow-md p-4 border border-gray-200">
                     <h2 class="text-lg font-bold">Add new emoji 🤲</h2>
-                    <p class="text-sm">Debug using Chrome...</p>
-                    <span class="text-xs">Deadline: 21 March 2025</span>
-                    <button class="btn bg-blue-600">Completed</button>
+                    <p class="text-sm">Debug using Chrome...</p><br><br>
+                    <div class="text-xs">Deadline: 21 March 2025</div>
+                    <button class="btn bg-blue-600" id="button4">Completed</button>
                 </div>
                 <div class="card bg-base-100 shadow-md p-4 border border-gray-200">
                     <h2 class="text-lg font-bold">Integrate OpenAI API</h2>
-                    <p class="text-sm">Debug using Chrome DevTools...</p>
-                    <span class="text-xs">Deadline: 21 March 2025</span>
-                    <button class="btn bg-blue-600">Completed</button>
+                    <p class="text-sm">Debug using Chrome DevTools...</p><br>
+                    <div class="text-xs">Deadline: 21 March 2025</div>
+                    <button class="btn bg-blue-600" id="button5">Completed</button>
                 </div>
                 <div class="card bg-base-100 shadow-md p-4 border border-gray-200">
                     <h2 class="text-lg font-bold">Improve Job Searching</h2>
                     <p class="text-sm">Debug using Chrome DevTools...</p>
-                    <span class="text-xs">Deadline: 21 March 2025</span>
-                    <button class="btn bg-blue-600">Completed</button>
+                    <div class="text-xs">Deadline: 21 March 2025</div>
+                    <button class="btn bg-blue-600" id="button6">Completed</button>
                 </div>
             </div>
         </div>
     </div>
 
-    </section>
+    </section2>
 
 
 
-    <Section>
-        <div class="mt-6 bg-white p-6 rounded-lg shadow-lg w-1/2 h-auto">
-            <h2 class="text-lg font-semibold">Activity Log</h2>
-            <button class="btn bg-blue-600">Clear History</button>
+    <Section3 class="max-w-6xl mx-auto">
+        <div class="mt-6 bg-white p-6 rounded-lg shadow-lg w-1/2 h-auto text-center">
+            <h2 class="text-lg font-semibold ">Activity Log</h2>
+            <button class="btn bg-blue-600 ">Clear History</button>
             <ul class="mt-4 space-y-2 text-sm">
                 <li>You have completed the task "Add Dark Mode" at 12:48:15 PM</li>
                 <li>You have completed the task "Optimize Home Page" at 12:48:17 PM</li>
             </ul>
         </div>
     </div>
-    </Section>
+    </Section3>
+
+ </section1>
+    
+</section>
+
+<script src="index.js"></script>
 
 </body>
 </html>
