@@ -23,9 +23,9 @@
 
             <div class="flex items-center gap-4">
 
-                <div class="flex" >
+                <div class="flex gap-2" >
                     <img src="assets/checkbox.png" alt="no">
-                    <span class="font-bold text-2xl" id="checkBox">&nbsp;&nbsp;23</span>
+                    <span class="font-bold text-2xl" id="checkBox">23</span>
                 </div>
                 
 
@@ -59,7 +59,8 @@
 
                 <div class="flex card bg-base-100 shadow-md p-2 border">
                     <img src="assets/calender.png" alt="no" class="w-1/6 h-1/2">
-                <span class="text-lg font-semibold">  Wed, Jul 28 2025</span>
+
+                <span class="text-lg font-semibold">Wed, Jul 28 2025</span>
                 </div>
 
 
@@ -68,7 +69,7 @@
             <div class="grid grid-cols-3 gap-4 mt-4">
                 <div class="card bg-base-100 shadow-md p-4 border border-gray-200">
                     <h2 class="text-lg font-bold">Fix Mobile Button Issue</h2>
-                    <p class="text-sm">Debug using Chrome, check for overlap...</p>
+                    <p class="text-sm">Debug using Chrome, check for overlap...</p><br>
                     <span class="text-xs">Deadline: 21 March 2025</span>
                     <button class="btn bg-blue-600" id="button1" >Completed</button>
                 </div>
@@ -80,7 +81,7 @@
                 </div>
                 <div class="card bg-base-100 shadow-md p-4 border border-gray-200">
                     <h2 class="text-lg font-bold">Optimize Home Page</h2>
-                    <p class="text-sm">Debug using Chrome DevTools...</p><br>
+                    <p class="text-sm">Debug using Chrome DevTools...</p><br><br>
                     <div class="text-xs">Deadline: 21 March 2025</div>
                     <button class="btn bg-blue-600" id="button3">Completed</button>
                 </div>
@@ -95,13 +96,13 @@
                 </div>
                 <div class="card bg-base-100 shadow-md p-4 border border-gray-200">
                     <h2 class="text-lg font-bold">Integrate OpenAI API</h2>
-                    <p class="text-sm">Debug using Chrome DevTools...</p><br>
+                    <p class="text-sm">Debug using Chrome DevTools...</p><br><br>
                     <div class="text-xs">Deadline: 21 March 2025</div>
                     <button class="btn bg-blue-600" id="button5">Completed</button>
                 </div>
                 <div class="card bg-base-100 shadow-md p-4 border border-gray-200">
                     <h2 class="text-lg font-bold">Improve Job Searching</h2>
-                    <p class="text-sm">Debug using Chrome DevTools...</p>
+                    <p class="text-sm">Debug using Chrome DevTools...</p><br><br>
                     <div class="text-xs">Deadline: 21 March 2025</div>
                     <button class="btn bg-blue-600" id="button6">Completed</button>
                 </div>
@@ -113,20 +114,21 @@
 
 
 
-    <Section3 class="max-w-6xl mx-auto">
-        <div class="mt-6 bg-white p-6 rounded-lg shadow-lg w-1/2 h-auto text-center">
-            <h2 class="text-lg font-semibold ">Activity Log</h2>
-            <button class="btn bg-blue-600 ">Clear History</button>
-            <ul class="mt-4 space-y-2 text-sm">
+    <Section3 class="max-w-6xl mx-auto ">
+        <div class="mt-6 bg-white p-6 rounded-lg shadow-lg w-64 h-auto text-center">
+            <h2 class="text-lg font-semibold " >Activity Log</h2>
+            <button class="btn bg-blue-600 " id="clearHistory">Clear History</button>
+            <h2 class="text-lg font-semibold " id="activityLog"></h2>
+            <!--<ul class="mt-4 space-y-2 text-sm">
                 <li>You have completed the task "Add Dark Mode" at 12:48:15 PM</li>
                 <li>You have completed the task "Optimize Home Page" at 12:48:17 PM</li>
-            </ul>
+            </ul>-->
         </div>
     </div>
     </Section3>
 
  </section1>
-    
+ <p id="time"></p>
 </section>
 
 <script src="index.js"></script>
